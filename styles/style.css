@@ -1,0 +1,342 @@
+/* GLOBAL AND RESET **************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+/********** PRELOAD **********/
+/* .preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 196, 177, 0.414);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.preload .preload-effect {
+    width: 60px;
+    height: 60px;
+    border: 3.5px solid #232323;
+    border-left-color: #C0AC95;
+    border-radius: 50%;
+    animation: rotateAll 1s infinite linear;
+}
+
+.preload .preload-icon {
+    width: 4.5rem;
+    animation: flashScale 1.8s linear infinite;
+}
+
+.loaded {
+    display: none;
+} */
+
+/* HEADER **************************************************/
+header {
+    position: fixed;
+    width: 100%;
+    padding: 0.8rem 2rem;
+    background-color: #ffffff9d;
+    z-index: 10;
+}
+
+header .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-content .logo-container .logo-link {
+    display: flex;
+    align-items: center;
+}
+
+header .header-content .logo-container .logo-link .logo-image {
+    width: 4em;
+}
+
+/* header .header-content .mobile-menu-icon-container {} */
+
+header .header-content .mobile-menu-icon-container #mobile-menu-icon-closed {
+    font-size: 1.6rem;
+}
+
+header .header-content .desktop-menu-container {
+    display: none;
+}
+
+/* MAIN **************************************************/
+/********** HOME SECTION **************************************************/
+
+/* main {} */
+
+main section#home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+    background-color: #ffcc00;
+}
+
+main section#home-section .home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+    color: #fff;
+}
+
+main section#home-section .home-content .home-title {
+    font-size: 3rem;
+}
+
+main section#home-section .home-content .home-text {
+    font-size: 1.2rem;
+}
+
+/********** SERVICES SECTION **************************************************/
+main section#services-section {
+    padding: 6rem 1rem;
+}
+
+main section#services-section .services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+main section#services-section .services-content .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+main section#services-section .services-content .title-container .section-title {
+    font-size: 2.2rem;
+}
+
+main section#services-section .services-content .title-container .title-decoration {
+    width: 8rem;
+    height: 2px;
+    background-color: #ffcc00;
+}
+
+main section#services-section .services-content .title-container .section-subtitle {
+    font-size: 1.2rem;
+}
+
+main section#services-section .services-content .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+main section#services-section .services-content .service-list .service-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    padding: 2rem;
+    border: 3px solid #ffcc00;
+    border-radius: 0.8rem;
+}
+
+main section#services-section .services-content .service-list .service-card .service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main section#services-section .services-content .service-list .service-card .service-item .item-icon {
+    font-size: 3.5rem;
+}
+
+main section#services-section .services-content .service-list .service-card .service-item .item-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/********** WHO WE ARE SECTION **************************************************/
+section#who-we-are-section {
+    position: relative;
+    padding: 4rem 1rem 3rem 1rem;
+    background-image: url(./../assets/img/inside-building-floors.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+section#who-we-are-section .background-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #232323aa;
+    z-index: -1;
+}
+
+section#who-we-are-section .who-content {
+    z-index: 1;
+}
+
+section#who-we-are-section .who-content .who-border {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    border: 3px solid #ffcc0086;
+    outline: 3px solid #ffcc0086;
+    outline-offset: -0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 8px #0003;
+}
+
+section#who-we-are-section .who-content .who-border .who-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section#who-we-are-section .who-content .who-info .who-history {
+    flex: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+section#who-we-are-section .who-content .who-info .who-history .who-title {
+    color: #fff;
+    font-size: 2rem;
+}
+
+section#who-we-are-section .who-content .who-info .who-history .title-decoration {
+    width: 6rem;
+    height: 4px;
+    margin: 0.5rem 0 2rem 4px;
+    background-color: #dfdfdf;
+    /* background-color: #ffeea8; */
+    border-radius: 100px;
+}
+
+/* section#who-we-are-section .who-content .who-info .who-history .who-text-container {
+    
+} */
+
+section#who-we-are-section .who-content .who-info .who-history .who-text-container .who-text {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+section#who-we-are-section .who-content .who-info .who-statics {
+    flex: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+section#who-we-are-section .who-content .who-info .who-statics .statics-item {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+}
+
+section#who-we-are-section .who-content .who-info .who-statics .statics-item .statics-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 72px;
+    height: 72px;
+    background-color: #ffcc00;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+section#who-we-are-section .who-content .who-info .who-statics .statics-item .statics-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* gap: 0.2rem; */
+}
+
+section#who-we-are-section .who-content .who-info .who-statics .statics-item .statics-info .statics-number {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+section#who-we-are-section .who-content .who-info .who-statics .statics-item .statics-info .statics-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+section#who-we-are-section .who-content .who-border .learn-more-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#who-we-are-section .who-content .who-border .learn-more-container .learn-more-button {
+    width: 150px;
+    padding: 12px 16px;
+    border-radius: 0.5rem;
+    background-color: #ffcc00;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+    text-align: center;
+}
+
+section#who-we-are-section .who-content .who-border .learn-more-container .learn-more-button:hover {
+    cursor: pointer;
+    background-color: #b49002;
+}

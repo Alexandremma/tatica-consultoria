@@ -1,0 +1,102 @@
+/* TAILWIND BREAKPOINTS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } */
+
+/* BOOTSTRAP BREAKPOINTS
+xs 480px
+sm 768px
+md 992px
+lg 1200px */
+
+@media screen and (min-width: 1024px) {
+    /* HEADER **************************************************/
+    header {
+        padding: 0.8rem;
+    }
+
+    header .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header .header-content .mobile-menu-icon-container {
+        display: none;
+    }
+
+    header .header-content .desktop-menu-container {
+        display: block;
+    }
+
+    header .header-content .desktop-menu-container .menu-list {
+        display: flex;
+        gap: 2.5rem;
+        height: 100%;
+    }
+
+    header .header-content .desktop-menu-container .menu-list .menu-item {
+        height: 100%;
+    }
+
+    header .header-content .desktop-menu-container .menu-list .menu-item .menu-item-link {
+        padding: 4px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    header .header-content .desktop-menu-container .menu-list .menu-item .menu-item-link:hover {
+        color: #fff;
+        cursor: pointer;
+        border-bottom: 3px solid #fff;
+    }
+
+    /* MAIN **************************************************/
+    /********** HOME SECTION **************************************************/
+    main section#home-section {
+        padding: 0 1rem;
+    }
+    
+    main section#home-section .home-content {
+        padding: 2rem;
+    }
+
+    main section#home-section .home-content .home-title {
+        font-size: 3.6rem;
+    }
+    
+    main section#home-section .home-content .home-text {
+        font-size: 1.2rem;
+    }
+
+    /********** SERVICES SECTION **************************************************/
+    main section#services-section .services-content .service-list {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    main section#services-section .services-content .service-list .service-card {
+        width: 300px;
+    }
+
+    /********** WHO WE ARE SECTION **************************************************/
+    section#who-we-are-section .who-content .who-border {
+        gap: 1rem;
+        padding: 8rem 4rem;
+    }
+
+    section#who-we-are-section .who-content .who-border .who-info {
+        flex-direction: row;
+    }
+
+    section#who-we-are-section .who-content .who-info .who-statics {
+        padding-left: 10rem;
+    }
+
+    section#who-we-are-section .who-content .who-border .learn-more-container {
+        justify-content: start;
+    }
+}
