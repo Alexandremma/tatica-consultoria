@@ -118,4 +118,14 @@ lg 1200px */
     main section#differentials-section .differentials-content .differential-list {
         flex-direction: row;
     }
+
+    /********** CONTACT SECTION **************************************************/
+    main section#contact-section .contact-content .contact-data .contact-info-container {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    main section#contact-section .contact-content .contact-data .contact-form-container .form-title-container {
+        text-align: center;
+    }
 }

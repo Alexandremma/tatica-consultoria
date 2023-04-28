@@ -484,8 +484,9 @@ main section#contact-section .contact-content .contact-data {
 
 main section#contact-section .contact-content .contact-data .contact-info-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 1rem;
 }
 
