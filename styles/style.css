@@ -66,7 +66,7 @@ header {
     position: fixed;
     width: 100%;
     padding: 0.8rem 2rem;
-    background-color: #ffffff9d;
+    background-color: #fffffff0;
     z-index: 10;
 }
 
@@ -102,12 +102,28 @@ header .header-content .desktop-menu-container {
 /* main {} */
 
 main section#home-section {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 0 2rem;
-    background-color: #ffcc00;
+    /* background-color: #ffcc00; */
+    background-image: url(./../assets/img/night-reunion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+main section#home-section .background-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #232323aa;
+    /* z-index: -1; */
 }
 
 main section#home-section .home-content {
@@ -117,6 +133,7 @@ main section#home-section .home-content {
     align-items: center;
     /* padding: 2rem; */
     color: #fff;
+    z-index: 0;
 }
 
 main section#home-section .home-content .home-title {
@@ -152,8 +169,9 @@ main section#services-section .services-content .title-container .section-title 
 
 main section#services-section .services-content .title-container .title-decoration {
     width: 8rem;
-    height: 2px;
-    background-color: #ffcc00;
+    height: 3px;
+    background-color: #f9dc66;
+    border-radius: 100px;
 }
 
 main section#services-section .services-content .title-container .section-subtitle {
@@ -197,7 +215,7 @@ main section#services-section .services-content .service-list .service-card .ser
 /********** WHO WE ARE SECTION **************************************************/
 section#who-we-are-section {
     position: relative;
-    padding: 4rem 1rem 3rem 1rem;
+    padding: 4rem 1rem;
     background-image: url(./../assets/img/inside-building-floors.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -273,13 +291,13 @@ section#who-we-are-section .who-content .who-info .who-statics {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 2rem;
 }
 
 section#who-we-are-section .who-content .who-info .who-statics .statics-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     gap: 1rem;
@@ -302,7 +320,7 @@ section#who-we-are-section .who-content .who-info .who-statics .statics-item .st
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     /* gap: 0.2rem; */
 }
 
@@ -339,4 +357,253 @@ section#who-we-are-section .who-content .who-border .learn-more-container .learn
 section#who-we-are-section .who-content .who-border .learn-more-container .learn-more-button:hover {
     cursor: pointer;
     background-color: #b49002;
+}
+
+/********** DIFFERENTIALS SECTION **************************************************/
+main section#differentials-section {
+    padding: 6rem 1rem;
+}
+
+main section#differentials-section .differentials-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+main section#differentials-section .differentials-content .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+main section#differentials-section .differentials-content .title-container .section-title {
+    font-size: 2.2rem;
+}
+
+main section#differentials-section .differentials-content .title-container .title-decoration {
+    width: 8rem;
+    height: 3px;
+    background-color: #f9dc66;
+    border-radius: 100px;
+}
+
+main section#differentials-section .differentials-content .differential-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+main section#differentials-section .differentials-content .differential-list .differential-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+
+main section#differentials-section .differentials-content .differential-list .differential-card .differential-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main section#differentials-section .differentials-content .differential-list .differential-card .differential-item .item-icon {
+    font-size: 3.5rem;
+}
+
+main section#differentials-section .differentials-content .differential-list .differential-card .differential-item .item-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main section#differentials-section .differentials-content .differential-list .differential-card .differential-item .item-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/********** CONTACT SECTION **************************************************/
+main section#contact-section {
+    position: relative;
+    padding: 6rem 1rem;
+    background-image: url(./../assets/img/four-buildings.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    z-index: 1;
+}
+
+main section#contact-section .background-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #232323aa;
+    z-index: -1;
+}
+
+main section#contact-section .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    z-index: 1;
+}
+
+main section#contact-section .contact-content .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+main section#contact-section .contact-content .title-container .section-title {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+main section#contact-section .contact-content .title-container .title-decoration {
+    width: 8rem;
+    height: 3px;
+    background-color: #f9dc66;
+    border-radius: 100px;
+}
+
+main section#contact-section .contact-content .contact-data {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+main section#contact-section .contact-content .contact-data .contact-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+main section#contact-section .contact-content .contact-data .contact-info-container .contact-info-item {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 350px;
+}
+
+main section#contact-section .contact-content .contact-data .contact-info-container .contact-info-item .info-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    background-color: #ffcc00;
+    font-size: 1.5rem;
+    border-radius: 100px;
+}
+
+main section#contact-section .contact-content .contact-data .contact-info-container .contact-info-item .info-item-name {
+    color: #fff;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+}
+
+main section#contact-section .contact-content .contact-data .contact-info-container .contact-info-item .info-item-text {
+    color: #fff;
+    text-align: center;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .form-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .form-title-container .form-title {
+    /* font-family: 'League Spartan', sans-serif; */
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .form-title-container .form-subtitle {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    /* color: #5f5555; */
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-input-container .form-input {
+    /* width: 100%; */
+    height: 50px;
+    padding: 1rem;
+    border: 2px solid #ffcc0037;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-input-container .form-input:focus-visible {
+    border: 2px solid #ffcc00;
+    outline: 0;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-input-container .form-textarea {
+    /* width: 100%; */
+    padding: 1rem;
+    border: 2px solid #ffcc0037;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-input-container .form-textarea:focus-visible {
+    border: 2px solid #ffcc00;
+    outline: 0;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-button-container .form-button {
+    width: 150px;
+    padding: 12px 16px;
+    background-color: #ffcc00;
+    color: #fff;
+    font-weight: 600;
+    border: 0.5px solid #ffcc00;
+    border-radius: 0.5rem;
+    outline: none;
+    box-shadow: 0px 0px 8px #0003;
+    /* font-size: 1.2rem; */
+    text-align: center;
+    transition: 0.3s;
+}
+
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-button-container .form-button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
 }

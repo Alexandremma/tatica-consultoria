@@ -41,15 +41,16 @@ lg 1200px */
     }
 
     header .header-content .desktop-menu-container .menu-list .menu-item .menu-item-link {
-        padding: 4px;
+        padding: 4px 12px;
         font-weight: 600;
-        transition: 0.3s;
+        transition: 0.1s;
     }
 
     header .header-content .desktop-menu-container .menu-list .menu-item .menu-item-link:hover {
-        color: #fff;
+        color: #ffcc00;
         cursor: pointer;
-        border-bottom: 3px solid #fff;
+        border-bottom: 3px solid #ffcc00;
+        border-radius: 8px;
     }
 
     /* MAIN **************************************************/
@@ -83,6 +84,10 @@ lg 1200px */
     }
 
     /********** WHO WE ARE SECTION **************************************************/
+    section#who-we-are-section {
+        padding: 6rem 4rem;
+    }
+
     section#who-we-are-section .who-content .who-border {
         gap: 1rem;
         padding: 8rem 4rem;
@@ -93,10 +98,24 @@ lg 1200px */
     }
 
     section#who-we-are-section .who-content .who-info .who-statics {
+        align-items: start;
         padding-left: 10rem;
+    }
+
+    section#who-we-are-section .who-content .who-info .who-statics .statics-item {
+        flex-direction: row;
+    }
+
+    section#who-we-are-section .who-content .who-info .who-statics .statics-item .statics-info {
+        align-items: start;
     }
 
     section#who-we-are-section .who-content .who-border .learn-more-container {
         justify-content: start;
+    }
+
+    /********** DIFFERENTIALS SECTION **************************************************/
+    main section#differentials-section .differentials-content .differential-list {
+        flex-direction: row;
     }
 }
