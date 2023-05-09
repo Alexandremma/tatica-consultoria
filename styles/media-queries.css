@@ -77,10 +77,11 @@ lg 1200px */
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        padding: 0 4rem;
     }
 
     main section#services-section .services-content .service-list .service-card {
-        width: 300px;
+        width: 250px;
     }
 
     /********** WHO WE ARE SECTION **************************************************/
@@ -115,8 +116,55 @@ lg 1200px */
     }
 
     /********** DIFFERENTIALS SECTION **************************************************/
+    main section#differentials-section .differentials-content {
+        gap: 5rem;
+    }
+    
     main section#differentials-section .differentials-content .differential-list {
         flex-direction: row;
+        align-items: start;
+        gap: 3.5rem;
+    }
+
+    /********** CASES AND ARTICLES SECTION **************************************************/
+    main section#cases-articles-section .cases-articles-content {
+        gap: 5rem;
+    }
+    
+    main section#cases-articles-section .cases-articles-content .article-list {
+        flex-direction: row;
+        align-items: start;
+        gap: 3.5rem;
+        padding: 0 4rem;
+    }
+
+    main section#cases-articles-section .cases-articles-content .article-list .article-card {
+        flex-direction: row;
+        height: 300px;
+        /* width: 400px; */
+    }
+
+    main section#cases-articles-section .cases-articles-content .article-list .article-card .article-image-container {
+        flex: 50;
+    }
+
+    main section#cases-articles-section .cases-articles-content .article-list .article-card .article-image-container .article-image {
+        /* width: 400px; */
+        height: 100%;
+        /* border-right: 2px solid #e4e4e4; */
+        border-bottom: none;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    main section#cases-articles-section .cases-articles-content .article-list .article-card .article-info-container {
+        flex: 50;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    main section#cases-articles-section .cases-articles-content .article-list .article-card .article-info-container .article-link .article-button {
+        width: auto;
     }
 
     /********** CONTACT SECTION **************************************************/
