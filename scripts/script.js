@@ -1,9 +1,19 @@
+const preloadPage = document.getElementById("preload");
+const loadedPage = document.getElementById("loaded");
+
+function loadingPage() {
+    // setTimeout(() => {
+        preloadPage.style.display = 'none';
+        loadedPage.style.display = 'block';
+    // }, 5000);
+}
+
 const openMenuButton = document.getElementById("mobile-open-menu-icon");
 const closeMenuButton = document.getElementById("mobile-close-menu-icon");
 
 const mobileMenu = document.getElementById("mobile-nav-menu-container");
 const mobileMenuList = document.getElementsByClassName("mobile-menu-list");
-const mobileMenuItems = document.querySelectorAll(".mobile-nav-menu-container .mobile-menu-list .mobile-menu-item")
+const mobileMenuItems = document.querySelectorAll(".mobile-nav-menu-container .mobile-menu-list .mobile-menu-item");
 
 openMenuButton.addEventListener('click', () => {
     openMenuButton.style.display = 'none';

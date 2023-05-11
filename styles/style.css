@@ -29,7 +29,7 @@ button {
 }
 
 /********** PRELOAD **********/
-/* .preload {
+.preload {
     position: fixed;
     top: 0;
     left: 0;
@@ -59,7 +59,7 @@ button {
 
 .loaded {
     display: none;
-} */
+}
 
 /********** MOBILE MENU **************************************************/
 .mobile-nav-menu-container {
@@ -326,15 +326,17 @@ section#who-we-are-section .who-content .who-info .who-history {
 section#who-we-are-section .who-content .who-info .who-history .who-title {
     color: #fff;
     font-size: 2rem;
+    text-align: center;
 }
 
 section#who-we-are-section .who-content .who-info .who-history .title-decoration {
     width: 6rem;
     height: 4px;
-    margin: 0.5rem 0 2rem 4px;
-    background-color: #dfdfdf;
+    margin: 0.5rem auto 2rem auto;
+    background-color: #ffcc0086;
     /* background-color: #ffeea8; */
     border-radius: 100px;
+    text-align: center;
 }
 
 /* section#who-we-are-section .who-content .who-info .who-history .who-text-container {} */
@@ -420,7 +422,7 @@ section#who-we-are-section .who-content .who-border .learn-more-container .learn
 
 /********** DIFFERENTIALS SECTION **************************************************/
 main section#differentials-section {
-    padding: 6rem 1rem;
+    padding: 8rem 1rem;
 }
 
 main section#differentials-section .differentials-content {
@@ -451,7 +453,7 @@ main section#differentials-section .differentials-content .title-container .titl
 main section#differentials-section .differentials-content .differential-list {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 main section#differentials-section .differentials-content .differential-list .differential-card {
@@ -460,7 +462,7 @@ main section#differentials-section .differentials-content .differential-list .di
     align-items: center;
     width: 100%;
     height: 15rem;
-    padding: 1rem;
+    padding: 0 1rem;
     border-radius: 0.8rem;
 }
 
