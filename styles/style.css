@@ -273,6 +273,158 @@ main section#services-section .services-content .service-list .service-card .ser
     text-align: center;
 }
 
+/********** SERVICES SECTION VERSION 2 **************************************************/
+main section#services-section {
+    padding: 6rem 1rem;
+}
+
+main section#services-section .services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+main section#services-section .services-content .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+main section#services-section .services-content .title-container .section-title {
+    font-size: 2.2rem;
+}
+
+main section#services-section .services-content .title-container .title-decoration {
+    width: 8rem;
+    height: 3px;
+    background-color: #f9dc66;
+    border-radius: 100px;
+}
+
+main section#services-section .services-content .title-container .section-subtitle {
+    font-size: 1.2rem;
+}
+
+main section#services-section .services-content .services-solutions {
+    display: flex;
+    gap: 2rem;
+}
+
+main section#services-section .services-content .services-solutions .service-category-list {
+    flex: 40;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+main section#services-section .services-content .services-solutions .service-category-list .category-accordion {
+    /* width: 350px; */
+    /* height: 80vh; */
+}
+
+main section#services-section .services-content .services-solutions .service-category-list .category-accordion .accordion-tab {
+    width: 100%;
+    position: relative;
+}
+
+main section#services-section .services-content .services-solutions .service-category-list .category-accordion .accordion-tab .accordion-tab-button {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px;
+    color: #fff;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+main section#services-section .services-content .services-solutions .service-category-list .category-accordion .accordion-tab .accordion-tab-panel {
+    width: 95%;
+    max-height: 0px;
+    margin: 10px auto;
+    padding: 0px 1rem;
+    background-color: #ffdc4fd2;
+    color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: max-height 0.8s, padding 0.8s;
+}
+
+
+main section#services-section .services-content .services-solutions .service-category-list .category-accordion .accordion-tab.active-tab .accordion-tab-panel {
+    padding: 1rem;
+    /* transition: height 0.8s, padding 0.8s; */
+}
+
+main section#services-section .services-content .services-solutions .service-list {
+    flex: 60;
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* gap: 3.5rem; */
+}
+
+main section#services-section .services-content .services-solutions .service-list .category-service-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+main section#services-section .services-content .services-solutions .service-list .category-service-list.category-service-list-2 {
+    display: none;
+}
+
+main section#services-section .services-content .services-solutions .service-list .category-service-list.category-service-list-3 {
+    display: none;
+}
+
+main section#services-section .services-content .services-solutions .service-list .category-service-list.category-service-list-4 {
+    display: none;
+}
+
+main section#services-section .services-content .services-solutions .service-list .category-service-list .service-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 16rem; */
+    padding: 2rem;
+    border: 3px solid #ffcc00;
+    border-radius: 0.8rem;
+}
+
+main section#services-section .services-content .services-solutions .service-list .category-service-list .service-card:hover {
+    cursor: pointer;
+}
+
+main section#services-section .services-content .services-solutions .service-list .category-service-list .service-card .service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main section#services-section .services-content .services-solutions .service-list .category-service-list .service-card .service-item .item-icon {
+    font-size: 3.2rem;
+}
+
+main section#services-section .services-content .services-solutions .service-list .category-service-list .service-card .service-item .item-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
 /********** WHO WE ARE SECTION **************************************************/
 section#who-we-are-section {
     position: relative;
@@ -490,7 +642,7 @@ main section#differentials-section .differentials-content .differential-list .di
 
 /********** CASES AND ARTICLES SECTION **************************************************/
 main section#cases-articles-section {
-    padding: 2rem 1rem 6rem 1rem;
+    padding: 6rem 1rem;
 }
 
 main section#cases-articles-section .cases-articles-content {
@@ -559,7 +711,7 @@ main section#cases-articles-section .cases-articles-content .article-list .artic
 }
 
 main section#cases-articles-section .cases-articles-content .article-list .article-card .article-info-container .article-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 main section#cases-articles-section .cases-articles-content .article-list .article-card .article-info-container .article-text {

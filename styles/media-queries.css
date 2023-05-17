@@ -72,7 +72,7 @@ lg 1200px */
     }
 
     /********** SERVICES SECTION **************************************************/
-    main section#services-section .services-content .service-list {
+    /* main section#services-section .services-content .service-list {
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -82,7 +82,7 @@ lg 1200px */
 
     main section#services-section .services-content .service-list .service-card {
         width: 250px;
-    }
+    } */
 
     /********** WHO WE ARE SECTION **************************************************/
     section#who-we-are-section {
@@ -140,7 +140,7 @@ lg 1200px */
 
     main section#cases-articles-section .cases-articles-content .article-list .article-card {
         flex-direction: row;
-        height: 300px;
+        height: 316px;
         /* width: 400px; */
     }
 
@@ -161,6 +161,10 @@ lg 1200px */
         justify-content: space-between;
         padding: 1rem 1.5rem;
         border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    main section#cases-articles-section .cases-articles-content .article-list .article-card .article-info-container .article-text {
+        font-size: 1rem;
     }
 
     main section#cases-articles-section .cases-articles-content .article-list .article-card .article-info-container .article-link .article-button {
