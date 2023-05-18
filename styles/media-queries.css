@@ -84,6 +84,35 @@ lg 1200px */
         width: 250px;
     } */
 
+    main section#services-section .services-content .services-solutions {
+        gap: 0rem;
+    }
+
+    main section#services-section .services-content .services-solutions .service-category-list .category-accordion {
+        flex-direction: row;
+    }
+
+    main section#services-section .services-content .services-solutions .service-category-list .category-accordion .accordion-tab.active-tab .accordion-tab-button {
+        margin-bottom: -2px;
+        background-color: #fff;
+        color: #ffcc00;
+        border-left: 1px solid #ffcc00;
+        border-top: 1px solid #ffcc00;
+        border-right: 1px solid #ffcc00;
+        border-bottom: 1px solid #fff;
+        box-shadow: none;
+        opacity: 1;
+        z-index: 2;
+    }
+
+    main section#services-section .services-content .services-solutions .service-list .category-service-list .services-items-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* gap: 2rem; */
+        width: 100%;
+    }
+
     /********** WHO WE ARE SECTION **************************************************/
     section#who-we-are-section {
         padding: 6rem 4rem;
