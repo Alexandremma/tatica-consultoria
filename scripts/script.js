@@ -54,18 +54,26 @@ const categoryServiceList4 = document.getElementById("category-service-list-4");
 
 tabs.forEach((tab) => {
     tab.addEventListener("click", (event) => {
-        tab.classList.toggle("active-tab");
+        // tab.classList.toggle("active-tab");
+        tabs.forEach((element) => {
+            if (tab == element) {
+                element.classList.add("active-tab");
+            } else {
+                element.classList.remove("active-tab");
+            }
+        });
 
-        console.log('tab.children', tab.children);
-        const buttonElement = tab.children[0];
-        const panelElement = tab.children[1];
+        selectedCategory(tab);
 
-        if (panelElement.style.maxHeight) {
-            panelElement.style.maxHeight = null;
-        } else {
-            panelElement.style.maxHeight = panelElement.scrollHeight + 32 + "px";
-            selectedCategory(tab);
-        }
+        // const buttonElement = tab.children[0];
+        // const panelElement = tab.children[1];
+
+        // if (panelElement.style.maxHeight) {
+        //     panelElement.style.maxHeight = null;
+        // } else {
+        //     panelElement.style.maxHeight = panelElement.scrollHeight + 32 + "px";
+        //     selectedCategory(tab);
+        // }
     });
 });
 
