@@ -72,18 +72,6 @@ lg 1200px */
     }
 
     /********** SERVICES SECTION **************************************************/
-    /* main section#services-section .services-content .service-list {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0 4rem;
-    }
-
-    main section#services-section .services-content .service-list .service-card {
-        width: 250px;
-    } */
-
     main section#services-section .services-content .services-solutions {
         flex-direction: row;
         gap: 0rem;
