@@ -28,6 +28,28 @@ button {
     border: none;
 }
 
+/* SCROLL BAR */
+body::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    box-shadow: inset 0 0 5px grey;
+    background: transparent;
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #ffde5bdf;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #9a7c01;
+}
+
 /********** PRELOAD **********/
 .preload {
     position: fixed;
@@ -129,6 +151,11 @@ header .header-content {
 header .header-content .logo-container .logo-link {
     display: flex;
     align-items: center;
+    transition: 0.3s;
+}
+
+header .header-content .logo-container .logo-link:hover {
+    opacity: 0.8;
 }
 
 header .header-content .logo-container .logo-link .logo-image {
@@ -504,6 +531,11 @@ section#who-we-are-section .who-content .who-info .who-statics .statics-item {
     /* justify-content: center; */
     align-items: center;
     gap: 1rem;
+    transition: scale 0.3s;
+}
+
+section#who-we-are-section .who-content .who-info .who-statics .statics-item:hover {
+    scale: 1.06;
 }
 
 section#who-we-are-section .who-content .who-info .who-statics .statics-item .statics-icon {
@@ -553,13 +585,13 @@ section#who-we-are-section .who-content .who-border .learn-more-container .learn
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
-    transition: 0.3s;
     text-align: center;
+    transition: 0.3s;
 }
 
 section#who-we-are-section .who-content .who-border .learn-more-container .learn-more-button:hover {
-    cursor: pointer;
     background-color: #b49002;
+    cursor: pointer;
 }
 
 /********** DIFFERENTIALS SECTION **************************************************/
@@ -603,9 +635,15 @@ main section#differentials-section .differentials-content .differential-list .di
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 15rem;
+    height: 22rem;
     padding: 0 1rem;
     border-radius: 0.8rem;
+    transition: 0.3s;
+}
+
+main section#differentials-section .differentials-content .differential-list .differential-card:hover {
+    box-shadow: 0px 0px 6px #0003;
+    scale: 1.02;
 }
 
 main section#differentials-section .differentials-content .differential-list .differential-card .differential-item {
@@ -675,6 +713,11 @@ main section#cases-articles-section .cases-articles-content .article-list .artic
     border: 2px solid #e4e4e4;
     border-radius: 0.6rem;
     box-shadow: 0px 0px 8px #0003;
+    transition: scale 0.3s;
+}
+
+main section#cases-articles-section .cases-articles-content .article-list .article-card:hover {
+    scale: 1.01;
 }
 
 main section#cases-articles-section .cases-articles-content .article-list .article-card:hover {
@@ -780,7 +823,7 @@ main section#contact-section .contact-content .title-container .title-decoration
 main section#contact-section .contact-content .contact-data {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    /* gap: 6rem; */
 }
 
 main section#contact-section .contact-content .contact-data .contact-info-container {
@@ -798,6 +841,13 @@ main section#contact-section .contact-content .contact-data .contact-info-contai
     align-items: center;
     gap: 0.8rem;
     width: 350px;
+    padding: 1rem 0;
+    transition: 0.3s;
+}
+
+main section#contact-section .contact-content .contact-data .contact-info-container .contact-info-item:hover {
+    box-shadow: 0px 0px 6px #0003;
+    scale: 1.02;
 }
 
 main section#contact-section .contact-content .contact-data .contact-info-container .contact-info-item .info-item-icon {
@@ -815,7 +865,7 @@ main section#contact-section .contact-content .contact-data .contact-info-contai
 main section#contact-section .contact-content .contact-data .contact-info-container .contact-info-item .info-item-name {
     color: #fff;
     font-family: 'League Spartan', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -824,6 +874,49 @@ main section#contact-section .contact-content .contact-data .contact-info-contai
     font-family: 'League Spartan', sans-serif;
     font-size: 1.2rem;
     text-align: center;
+}
+
+main section#contact-section .contact-content .contact-data .contact-social {
+    display: flex;
+    width: 100%;
+    padding: 4rem 0 6rem 0;
+}
+
+main section#contact-section .contact-content .contact-data .contact-social .social-media-list  {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main section#contact-section .contact-content .contact-data .contact-social .social-media-list .social-media-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main section#contact-section .contact-content .contact-data .contact-social .social-media-list .social-media-item .social-media-text {
+    color: #fff;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+}
+
+main section#contact-section .contact-content .contact-data .contact-social .social-media-list .social-media-item .social-media-icon {
+    padding: 0.8rem 0.9rem;
+    border-radius: 1rem;
+    background-color: #ffffffce;
+    color: #000;
+    font-size: 2.5rem;
+    transition: 0.6s;
+}
+
+main section#contact-section .contact-content .contact-data .contact-social .social-media-list .social-media-item .social-media-icon:hover {
+    opacity: 0.8;
+    scale: 1.05;
 }
 
 main section#contact-section .contact-content .contact-data .contact-form-container {
@@ -887,6 +980,11 @@ main section#contact-section .contact-content .contact-data .contact-form-contai
     font-size: 1rem;
 }
 
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-input-container .form-input:hover {
+    border: 2px solid #ffcc00;
+    outline: 0;
+}
+
 main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-input-container .form-input:focus-visible {
     border: 2px solid #ffcc00;
     outline: 0;
@@ -906,6 +1004,11 @@ main section#contact-section .contact-content .contact-data .contact-form-contai
     font-size: 1rem;
 }
 
+main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-input-container .form-textarea:hover {
+    border: 2px solid #ffcc00;
+    outline: 0;
+}
+
 main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-input-container .form-textarea:focus-visible {
     border: 2px solid #ffcc00;
     outline: 0;
@@ -923,13 +1026,13 @@ main section#contact-section .contact-content .contact-data .contact-form-contai
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.6s;
 }
 
 main section#contact-section .contact-content .contact-data .contact-form-container .contact-form .form-button-container .form-button:hover {
     background-color: #b49002;
     cursor: pointer;
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 /********** FOOTER **************************************************/
@@ -955,6 +1058,11 @@ footer .footer-content {
 
 footer .footer-content .footer-logo-container .footer-logo-image {
     width: 3rem;
+    transition: 0.3s;
+}
+
+footer .footer-content .footer-logo-container .footer-logo-image:hover {
+    opacity: 0.8;
 }
 
 footer .footer-content .social-media-container .social-media-list {
@@ -964,12 +1072,13 @@ footer .footer-content .social-media-container .social-media-list {
 }
 
 footer .footer-content .social-media-container .social-media-list .social-media-item .social-media-icon {
-    color: #6b6b6b;
+    color: #fff;
     font-size: 1.8rem;
+    transition: 0.6s;
 }
 
 footer .footer-content .social-media-container .social-media-list .social-media-item .social-media-icon:hover {
-    color: #fff;
+    color: #6b6b6b;
 }
 
 footer .footer-copyright-container {

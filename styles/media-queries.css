@@ -101,7 +101,7 @@ lg 1200px */
         margin-left: 1px;
         border-left: 1px solid #ffcc00;
         border-top: 1px solid #ffcc00;
-        border-right: 1px solid #fff;
+        border-right: 2px solid #fff;
         border-bottom: 1px solid #ffcc00;
         box-shadow: none;
         background-color: #ffcc0009;
@@ -231,5 +231,10 @@ lg 1200px */
 
     main section#contact-section .contact-content .contact-data .contact-form-container .form-title-container {
         text-align: center;
+    }
+
+    main section#contact-section .contact-content .contact-data .contact-social .social-media-list  {
+        flex-direction: row;
+        gap: 8rem;
     }
 }
