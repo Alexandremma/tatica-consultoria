@@ -168,6 +168,10 @@ lg 1200px */
     }
 
     /********** DIFFERENTIALS SECTION **************************************************/
+    main section#differentials-section {
+        padding-bottom: 2rem;
+    }
+
     main section#differentials-section .differentials-content {
         gap: 5rem;
     }
