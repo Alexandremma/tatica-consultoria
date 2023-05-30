@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb:hover {
     background: #9a7c01;
 }
 
-/********** PRELOAD **********/
+/********** PRELOAD **************************************************/
 .preload {
     position: fixed;
     top: 0;
@@ -273,9 +273,9 @@ main section#services-section .services-content .services-solutions {
 main section#services-section .services-content .services-solutions .service-category-list {
     flex: 40;
     display: flex;
-    /* justify-content: start;
-    align-items: center;
-    height: 100%; */
+    /* justify-content: start; */
+    /* align-items: center; */
+    /* height: 100%; */
     box-shadow: 0px 0px 8px #0003;
 }
 
@@ -301,11 +301,11 @@ main section#services-section .services-content .services-solutions .service-cat
     width: 100%;
     height: 100%;
     padding: 2rem 1rem;
-    background-color: #fff;
+    background-color: #eceaea;
     border: none;
     /* border-radius: 0.5rem; */
     box-shadow: 0px 0px 2px #0003;
-    color: #a8a8a8;
+    color: #000;
     text-align: start;
     font-size: 1rem;
     font-weight: bold;
@@ -316,8 +316,9 @@ main section#services-section .services-content .services-solutions .service-cat
 }
 
 main section#services-section .services-content .services-solutions .service-category-list .category-accordion .accordion-tab .accordion-tab-button:hover {
-    border: 1px solid #ffcc00;
-    background-color: #ffcc0009;
+    /* border: 1px solid #ffcc00; */
+    /* background-color: #ffcc0009; */
+    background-color: #fff;
     color: #ffcc00;
     opacity: 1;
 }
@@ -402,6 +403,7 @@ main section#services-section .services-content .services-solutions .service-lis
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
+    align-items: center;
     gap: 2rem;
     width: 100%;
 }
@@ -756,8 +758,8 @@ main section#cases-articles-section .cases-articles-content .article-list .artic
 }
 
 main section#cases-articles-section .cases-articles-content .article-list .article-card .article-info-container .article-link .article-button {
-    padding: 12px 16px;
     width: 100%;
+    padding: 12px 16px;
     background-color: #ffcc00;
     border-radius: 0.5rem;
     color: #fff;
@@ -897,6 +899,12 @@ main section#contact-section .contact-content .contact-data .contact-social .soc
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    transition: 0.3s;
+}
+
+main section#contact-section .contact-content .contact-data .contact-social .social-media-list .social-media-item:hover {
+    cursor: pointer;
+    scale: 1.05;
 }
 
 main section#contact-section .contact-content .contact-data .contact-social .social-media-list .social-media-item .social-media-text {
@@ -906,17 +914,12 @@ main section#contact-section .contact-content .contact-data .contact-social .soc
 }
 
 main section#contact-section .contact-content .contact-data .contact-social .social-media-list .social-media-item .social-media-icon {
-    padding: 0.8rem 0.9rem;
-    border-radius: 1rem;
-    background-color: #ffffffce;
+    padding: 0.9rem 1rem;
+    border-radius: 100px;
+    background-color: #ffcc00;
     color: #000;
-    font-size: 2.5rem;
-    transition: 0.6s;
-}
-
-main section#contact-section .contact-content .contact-data .contact-social .social-media-list .social-media-item .social-media-icon:hover {
-    opacity: 0.8;
-    scale: 1.05;
+    font-size: 2rem;
+    transition: 0.3s;
 }
 
 main section#contact-section .contact-content .contact-data .contact-form-container {
