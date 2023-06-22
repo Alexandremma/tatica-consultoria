@@ -424,7 +424,7 @@ main section#services-section .services-content .services-solutions .service-lis
 main section#services-section .services-content .services-solutions .service-list .category-service-list .services-items-container .service-item:hover {
     /* box-shadow: 0px 0px 8px #0003; */
     scale: 1.02;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 main section#services-section .services-content .services-solutions .service-list .category-service-list .services-items-container .service-item .item-icon {
@@ -598,7 +598,7 @@ section#who-we-are-section .who-content .who-border .learn-more-container .learn
 
 /********** DIFFERENTIALS SECTION **************************************************/
 main section#differentials-section {
-    padding: 8rem 1rem;
+    padding: 8rem 1rem 4rem 1rem;
 }
 
 main section#differentials-section .differentials-content {
@@ -672,7 +672,7 @@ main section#differentials-section .differentials-content .differential-list .di
 
 /********** CASES AND ARTICLES SECTION **************************************************/
 main section#cases-articles-section {
-    padding: 6rem 1rem 12rem 1rem;
+    padding: 6rem 1rem;
 }
 
 main section#cases-articles-section .cases-articles-content {

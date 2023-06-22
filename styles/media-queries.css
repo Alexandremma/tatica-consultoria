@@ -184,6 +184,10 @@ lg 1200px */
     }
 
     /********** CASES AND ARTICLES SECTION **************************************************/
+    main section#cases-articles-section {
+        padding: 4rem 1rem 6rem 1rem;
+    }
+    
     main section#cases-articles-section .cases-articles-content {
         gap: 5rem;
     }
@@ -198,7 +202,7 @@ lg 1200px */
     main section#cases-articles-section .cases-articles-content .article-list .article-card {
         flex-direction: row;
         height: 325px;
-        /* width: 400px; */
+        max-width: 800px;
     }
 
     main section#cases-articles-section .cases-articles-content .article-list .article-card .article-image-container {
