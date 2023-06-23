@@ -630,7 +630,7 @@ main section#differentials-section .differentials-content .title-container .titl
 main section#differentials-section .differentials-content .differential-list {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 main section#differentials-section .differentials-content .differential-list .differential-card {
@@ -733,7 +733,7 @@ main section#cases-articles-section .cases-articles-content .article-list .artic
 
 main section#cases-articles-section .cases-articles-content .article-list .article-card .article-image-container .article-image {
     width: 100%;
-    height: 325px;
+    height: 300px;
     /* border-bottom: 2px solid #e4e4e4; */
     border-radius: 0.5rem 0.5rem 0 0;
 }
@@ -1108,13 +1108,13 @@ footer .footer-copyright-container .copyright-text {
 /********** WHATSAPP FLOAT BUTTON **************************************************/
 .whatsapp-button-container {
     position: fixed;
-    bottom: 50px;
-    right: 24px;
+    bottom: 56px;
+    right: 32px;
     z-index: 80;
 }
 
 .whatsapp-button-container .whatsapp-button {
-    padding: 10px 14px;
+    padding: 12px 15px;
     /* width: 100px;
     height: 50px; */
     border-radius: 50%;
@@ -1123,13 +1123,13 @@ footer .footer-copyright-container .copyright-text {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 36px;
     transition: 0.3s;
 }
 
 .whatsapp-button-container .whatsapp-button:hover {
     background-color: #fff;
     color: #01e675;
-    font-weight: 900;
+    /* font-weight: 900; */
     box-shadow: 1px 1px 10px #101010;
 }
