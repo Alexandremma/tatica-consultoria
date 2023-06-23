@@ -211,7 +211,7 @@ lg 1200px */
 
     main section#cases-articles-section .cases-articles-content .article-list .article-card .article-image-container .article-image {
         /* width: 400px; */
-        height: 100%;
+        height: 325px;
         /* border-right: 2px solid #e4e4e4; */
         border-bottom: none;
         border-radius: 0.5rem 0 0 0.5rem;

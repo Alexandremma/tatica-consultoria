@@ -160,6 +160,7 @@ header .header-content .logo-container .logo-link:hover {
 
 header .header-content .logo-container .logo-link .logo-image {
     width: 4em;
+    height: 56px;
 }
 
 /* header .header-content .mobile-menu-icon-container {} */
@@ -192,7 +193,7 @@ main section#home-section {
     height: 100vh;
     padding: 0 2rem;
     /* background-color: #ffcc00; */
-    background-image: url(./../assets/img/night-reunion.jpg);
+    background-image: url(./../assets/img/night-reunion.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -448,7 +449,7 @@ main section#services-section .services-content .services-solutions .service-lis
 section#who-we-are-section {
     position: relative;
     padding: 4rem 1rem;
-    background-image: url(./../assets/img/inside-building-floors.jpg);
+    background-image: url(./../assets/img/inside-building-floors.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -732,6 +733,7 @@ main section#cases-articles-section .cases-articles-content .article-list .artic
 
 main section#cases-articles-section .cases-articles-content .article-list .article-card .article-image-container .article-image {
     width: 100%;
+    height: 325px;
     /* border-bottom: 2px solid #e4e4e4; */
     border-radius: 0.5rem 0.5rem 0 0;
 }
@@ -777,7 +779,7 @@ main section#cases-articles-section .cases-articles-content .article-list .artic
 main section#contact-section {
     position: relative;
     padding: 6rem 1rem;
-    background-image: url(./../assets/img/four-buildings.jpg);
+    background-image: url(./../assets/img/four-buildings.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1061,6 +1063,7 @@ footer .footer-content {
 
 footer .footer-content .footer-logo-container .footer-logo-image {
     width: 3rem;
+    height: 42px;
     transition: 0.3s;
 }
 

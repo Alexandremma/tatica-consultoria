@@ -14,7 +14,7 @@
         <!-- Primary Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&family=Montserrat:wght@300;400;600;700&display=optional" rel="stylesheet">
 
         <!-- Global Customized Style -->
         <link rel="stylesheet" href="./styles/style.css">
@@ -34,36 +34,36 @@
     </head>
     <body onload="loadingPage()">
         <div id="preload" class="preload">
-            <img class="preload-icon" src="./assets/img/logo-tatica.png" alt="Ícone de Carregamento">
+            <img class="preload-icon" src="./assets/img/logo-tatica.webp" alt="Ícone de Carregamento" loading="lazy">
         </div>
         <div id="loaded" class="loaded">
             <div id="mobile-nav-menu-container" class="mobile-nav-menu-container">
                 <ul class="mobile-menu-list">
                     <li class="mobile-menu-item" data-aos="fade-right">
-                        <a class="mobile-menu-link" href="#home-section">Início</a>
+                        <a class="mobile-menu-link" aria-label="Início" href="#home-section">Início</a>
                     </li>
                     <li class="mobile-menu-item" data-aos="fade-right">
-                        <a class="mobile-menu-link" href="#services-section">Serviços</a>
+                        <a class="mobile-menu-link"  aria-label="Serviços" href="#services-section">Serviços</a>
                     </li>
                     <li class="mobile-menu-item" data-aos="fade-right">
-                        <a class="mobile-menu-link" href="#who-we-are-section">Quem Somos</a>
+                        <a class="mobile-menu-link"  aria-label="Quem Somos" href="#who-we-are-section">Quem Somos</a>
                     </li>
                     <li class="mobile-menu-item" data-aos="fade-right">
-                        <a class="mobile-menu-link" href="#differentials-section">Diferenciais</a>
+                        <a class="mobile-menu-link"  aria-label="Diferenciais" href="#differentials-section">Diferenciais</a>
                     </li>
                     <li class="mobile-menu-item" data-aos="fade-right">
-                        <a class="mobile-menu-link" href="#cases-articles-section">Cases e Artigos</a>
+                        <a class="mobile-menu-link"  aria-label="Cases e Artigos" href="#cases-articles-section">Cases e Artigos</a>
                     </li>
                     <li class="mobile-menu-item" data-aos="fade-right">
-                        <a class="mobile-menu-link" href="#contact-section">Contato</a>
+                        <a class="mobile-menu-link"  aria-label="Contato" href="#contact-section">Contato</a>
                     </li>
                 </ul>
             </div>
             <header>
                 <div class="header-content">
                     <div class="logo-container" data-aos="fade-right">
-                        <a class="logo-link" href="#home-section">
-                            <img class="logo-image" src="./assets/img/logo-tatica.png" alt="Logo da Tática Consultoria">
+                        <a class="logo-link" aria-label="Início" href="#home-section">
+                            <img class="logo-image" src="./assets/img/logo-tatica.webp" alt="Logo da Tática Consultoria" loading="lazy">
                             <!-- <h1 class="logo-title">Tática</h1> -->
                         </a>
                     </div>
@@ -76,22 +76,22 @@
                     <nav class="desktop-menu-container" data-aos="fade-left">
                         <ul class="menu-list">
                             <li class="menu-item">
-                                <a class="menu-item-link" href="#home-section">Início</a>
+                                <a class="menu-item-link" aria-label="Início" href="#home-section">Início</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-item-link" href="#services-section">Serviços</a>
+                                <a class="menu-item-link" aria-label="Serviços" href="#services-section">Serviços</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-item-link" href="#who-we-are-section">Quem Somos</a>
+                                <a class="menu-item-link" aria-label="Quem Somos" href="#who-we-are-section">Quem Somos</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-item-link" href="#differentials-section">Diferenciais</a>
+                                <a class="menu-item-link" aria-label="Diferenciais" href="#differentials-section">Diferenciais</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-item-link" href="#cases-articles-section">Cases e Artigos</a>
+                                <a class="menu-item-link" aria-label="Cases e Artigos" href="#cases-articles-section">Cases e Artigos</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-item-link" href="#contact-section">Contato</a>
+                                <a class="menu-item-link" aria-label="Contato" href="#contact-section">Contato</a>
                             </li>
                         </ul>
                     </nav>
@@ -242,7 +242,7 @@
                                 </div>
                             </div>
                             <div class="learn-more-container" data-aos="fade-up">
-                                <a href="https://www.linkedin.com/company/t%C3%A1tica-consultoria/about/" target="_blank">
+                                <a aria-label="LinkedIn" href="https://www.linkedin.com/company/t%C3%A1tica-consultoria/about/" target="_blank">
                                     <span class="learn-more-button">Saiba Mais</span>
                                 </a>
                             </div>
@@ -299,12 +299,12 @@
                         <div class="article-list">
                             <div class="article-card" data-aos="fade-right">
                                 <div class="article-image-container">
-                                    <img class="article-image" src="https://miro.medium.com/v2/resize:fit:828/0*mosrCzW_Mm4JXD2J" alt="Thumbnail do Artigo">
+                                    <img class="article-image" src="./assets/img/medium-financial-health-article.webp" alt="Thumbnail do Artigo" loading="lazy">
                                 </div>
                                 <div class="article-info-container">
                                     <h3 class="article-title">Como está a saúde financeira da sua empresa?</h3>
                                     <p class="article-text">De acordo com dados do Sebrae, 23% das micro e pequenas empresas encerram suas atividades antes de completar 5 anos no Brasil. No caso dos Microempre...</p>
-                                    <a class="article-link" href="https://consultoriatatica.medium.com/como-est%C3%A1-a-sa%C3%BAde-financeira-da-sua-empresa-e9d21fa053e8" target="_blank">
+                                    <a class="article-link" aria-label="Artigo no site Medium" href="https://consultoriatatica.medium.com/como-est%C3%A1-a-sa%C3%BAde-financeira-da-sua-empresa-e9d21fa053e8" target="_blank">
                                         <button class="article-button">Saiba mais</button>
                                     </a>
                                 </div>
@@ -347,19 +347,19 @@
                             </div>
                             <div id="contact-social" class="contact-social">
                                 <div class="social-media-list">
-                                    <a data-aos="fade-up" href="https://www.instagram.com/consultoriatatica/" target="_blank">
+                                    <a data-aos="fade-up" aria-label="Instagram" href="https://www.instagram.com/consultoriatatica/" target="_blank">
                                         <div class="social-media-item">
                                             <span class="social-media-text">Instagram</span>
                                             <i class="social-media-icon fa-brands fa-instagram"></i>
                                         </div>
                                     </a>
-                                    <a data-aos="fade-up" href="https://www.linkedin.com/company/t%C3%A1tica-consultoria/about/" target="_blank">
+                                    <a data-aos="fade-up" aria-label="LinkedIn" href="https://www.linkedin.com/company/t%C3%A1tica-consultoria/about/" target="_blank">
                                         <div class="social-media-item">
                                             <span class="social-media-text">LinkedIn</span>
                                             <i class="social-media-icon fa-brands fa-linkedin"></i>
                                         </div>
                                     </a>
-                                    <a data-aos="fade-up" href="https://www.facebook.com/consultoriatatica?mibextid=LQQJ4d" target="_blank">
+                                    <a data-aos="fade-up" aria-label="Facebook" href="https://www.facebook.com/consultoriatatica?mibextid=LQQJ4d" target="_blank">
                                         <div class="social-media-item">
                                             <span class="social-media-text">Facebook</span>
                                             <i class="social-media-icon fa-brands fa-facebook"></i>
@@ -398,24 +398,24 @@
             <footer>
                 <div class="footer-content">
                     <div class="footer-logo-container">
-                        <a href="#home-section">
-                            <img class="footer-logo-image" src="./assets/img/logo-tatica.png" alt="Logo da Tática Consultoria">
+                        <a aria-label="Início" href="#home-section">
+                            <img class="footer-logo-image" src="./assets/img/logo-tatica.webp" alt="Logo da Tática Consultoria" loading="lazy">
                         </a>
                     </div>
                     <div class="social-media-container">
                         <div class="social-media-list">
                             <div class="social-media-item">
-                                <a href="https://www.instagram.com/consultoriatatica/" target="_blank">
+                                <a aria-label="Instagram" href="https://www.instagram.com/consultoriatatica/" target="_blank">
                                     <i class="social-media-icon fa-brands fa-instagram"></i>
                                 </a>
                             </div>
                             <div class="social-media-item">
-                                <a href="https://www.linkedin.com/company/t%C3%A1tica-consultoria/about/" target="_blank">
+                                <a aria-label="LinkedIn" href="https://www.linkedin.com/company/t%C3%A1tica-consultoria/about/" target="_blank">
                                     <i class="social-media-icon fa-brands fa-linkedin"></i>
                                 </a>
                             </div>
                             <div class="social-media-item">
-                                <a href="https://www.facebook.com/consultoriatatica?mibextid=LQQJ4d" target="_blank">
+                                <a aria-label="Facebook" href="https://www.facebook.com/consultoriatatica?mibextid=LQQJ4d" target="_blank">
                                     <i class="social-media-icon fa-brands fa-facebook"></i>
                                 </a>
                             </div>
@@ -425,7 +425,7 @@
             </footer>
 
             <div class="whatsapp-button-container">
-                <a class="whatsapp-button" href="https://wa.me/554488379469" target="_blank">
+                <a class="whatsapp-button" aria-label="Whatsapp" href="https://wa.me/554488379469" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
             </div>
